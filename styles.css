@@ -1,0 +1,445 @@
+:root {
+  --color1: #d66d82;
+}
+
+#alerts {
+  background-color: var(--color1);
+  color: yellow;
+  position: fixed;
+  top: 65px;
+  z-index: 1;
+  width: 100%;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+audio {
+  width: 100%;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  background-color: var(--color1);
+  position: absolute;
+  border-bottom: 3px solid yellow;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+}
+
+.notification-badge2 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: lime;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border: 2px solid black;
+}
+
+.navbar-light .navbar-brand {
+  color: gold;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: gold;
+  cursor: default;
+}
+
+.card-title {
+  font-size: 60px;
+  color: red;
+  -webkit-text-stroke: 2px gold;
+}
+
+.card-text {
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.warning {
+  font-size: 40px;
+}
+
+#go-to-cart {
+  color: var(--color1);
+}
+
+#go-to-cart:hover {
+  color: yellow;
+}
+
+.nav-item a {
+  color: var(--color1);
+  background-color: yellow;
+  margin: 0 5px 0 5px;
+  border-radius: 10px;
+}
+
+.nav-item a:hover {
+  color: yellow;
+  background-color: var(--color1);
+  border: 1px solid yellow;
+  margin: 0 5px 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cart-btn a {
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+.notification-badge {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: lime;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border: 2px solid black;
+}
+
+.row {
+  width: 100%;
+}
+
+/*Ads*/
+.popup-overlay.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.popup-container {
+  position: fixed;
+  background-color: rgb(212, 212, 212);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 6px 55px -10px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  border: 3px solid yellow;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+}
+
+.visit-button {
+  text-decoration: none;
+  background-color: var(--color1);
+  color: yellow;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.visit-button:hover {
+  background-color: yellow;
+  color: var(--color1);
+}
+
+.skip-button button {
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+/*----*/
+
+/*Products*/
+
+#products {
+  display: block;
+}
+
+#product {
+  width: 15.5rem;
+  box-shadow: 0 6px 55px -10px rgba(0, 0, 0, 0.9);
+}
+
+#btn-product {
+  background-color: var(--color1);
+  color: yellow;
+  border: 1px solid yellow;
+}
+
+#btn-product:hover {
+  background-color: yellow;
+  color: var(--color1);
+  border: 1px solid var(--color1);
+}
+
+.service {
+  border: 8px solid yellow;
+  border-radius: 10px;
+  background-color: var(--color1);
+  color: floralwhite;
+  padding: 30px;
+}
+
+/*Footer*/
+
+footer {
+  display: grid;
+  align-content: end;
+}
+
+.footer-text {
+  height: 150px;
+  background-color: var(--color1);
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*The Haunted House*/
+
+#haunted-house {
+  display: none;
+}
+
+.haunted-house-title {
+  color: crimson;
+  -webkit-text-stroke: 2px black;
+  margin: 65px 0 40px 10px;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.haunted-house-text {
+  font-size: 18px;
+}
+
+/*-----------------*/
+
+/*Services*/
+#services {
+  display: none;
+}
+
+/*-----------------*/
+
+/*Chart*/
+
+.total-purchase-confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-purchase {
+  padding: 5px;
+  background-color: #d66d82;
+  color: yellow;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn-purchase:hover {
+  background-color: yellow;
+  color: #d66d82;
+  border: 3px solid #d66d82;
+}
+
+#shopping-cart {
+  display: none;
+}
+
+.display-empty-cart {
+  display: none;
+}
+
+.empty-cart {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  opacity: 40%;
+}
+
+.order {
+  border: 4px solid yellow;
+  outline: 4px solid var(--color1);
+  display: flex;
+  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.order-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.order-img {
+  width: 50%;
+  height: auto;
+}
+
+.quantity-btn {
+  padding: 10px;
+  border-radius: 10px;
+  color: yellow;
+  background-color: var(--color1);
+  border: 2px solid yellow;
+}
+
+.adjust {
+  width: 40px;
+  height: 40px;
+}
+
+.cancel-order {
+  height: 40px;
+}
+/*-----------------*/
+
+@media (max-width: 1277px) {
+  .card-title {
+    font-size: 40px;
+  }
+
+  .warning {
+    font-size: 12px;
+  }
+
+  /*Products*/
+
+  /*Footer*/
+
+  footer h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  #go-to-cart {
+    color: yellow;
+  }
+
+  .nav-item a {
+    color: yellow;
+    background-color: var(--color1);
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+  }
+
+  .nav-item a:hover {
+    color: floralwhite;
+    border: none;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 944px) {
+  .card-title {
+    font-size: 40px;
+  }
+
+  .warning {
+    font-size: 12px;
+  }
+
+  .nav-item a {
+    color: yellow;
+    background-color: var(--color1);
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+  }
+
+  /*Products*/
+
+  /*Footer*/
+
+  footer h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 18px;
+  }
+
+  .warning {
+    font-size: 12px;
+  }
+
+  .nav-item a {
+    color: yellow;
+    background-color: var(--color1);
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+  }
+
+  /*Products*/
+
+  .container-product {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #product {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .card-description {
+    font-size: 13px;
+    font-weight: bold;
+    width: 170px;
+    position: relative;
+  }
+
+  #btn-product {
+    position: absolute;
+    bottom: -50px;
+    left: -35px;
+  }
+
+  /*Cart*/
+
+  .adjust {
+    margin-bottom: 6px;
+  }
+
+  /*Footer*/
+
+  footer h3 {
+    font-size: 15px;
+    width: 65%;
+  }
+}
